@@ -69,10 +69,10 @@ con.connect(function(err) {
    
    // if there is no error, you have the fields object
    // iterate for all the rows in fields object
-   Object.keys(fields).forEach(function(key) {
-     var field = fields[key];
-     console.log(field)
-   });
+  //  Object.keys(fields).forEach(function(key) {
+  //    var field = fields[key];
+  //    console.log(field)
+  //  });
    
   /* for(var row in result){
             console.log(row);
