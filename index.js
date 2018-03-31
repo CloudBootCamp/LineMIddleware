@@ -26,7 +26,7 @@ const app = express();
 // about the middleware, please refer to doc
 app.post('/callback', line.middleware(config), (req, res) => {
   Promise
-    .all(req.body.events.map(handleEvent))
+    .all(req.body.events.map(handleEvent2))
     .then((result) => res.json(result))
     .catch((err) => {
       console.error(err);
@@ -63,7 +63,7 @@ con.connect(function(err) {
    if (err) throw err;
    // if there is no error, you have the result
 
-   console.log('***handleEvent After Result***');
+   //console.log('***handleEvent After Result***');
    console.log(result);
 
    
